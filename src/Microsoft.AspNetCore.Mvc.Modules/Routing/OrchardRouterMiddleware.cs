@@ -11,7 +11,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Orchard.Environment.Shell;
 using Orchard.Hosting.Routing;
-using Orchard.Routes;
 using Orchard.Settings;
 
 namespace Orchard.Hosting.Web.Routing
@@ -82,7 +81,7 @@ namespace Orchard.Hosting.Web.Routing
                     }
                 }
             }
-            
+
             await pipeline.Invoke(httpContext);
         }
 
